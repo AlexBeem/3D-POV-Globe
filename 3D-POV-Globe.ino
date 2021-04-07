@@ -752,9 +752,9 @@ void loop()
        
         switch (mode)
         {
-        case 1: for (int l=0; l<15; l++){SendRecSPI(pgm_read_byte_near(bild_01 + pointer + l));}      // 15 Byte für SR#15 bis SR#1 rausschieben
+        case 1: for (int l=0; l<15; l++){SendRecSPI(/*pgm_read_byte_near*/(bild_01 + pointer + l));}      // 15 Byte für SR#15 bis SR#1 rausschieben
                 break;
-        case 2: for (int l=0; l<15; l++){SendRecSPI(pgm_read_byte_near(bild_02 + pointer + l));}      // 15 Byte für SR#15 bis SR#1 rausschieben
+        case 2: for (int l=0; l<15; l++){SendRecSPI(/*pgm_read_byte_near*/(bild_02 + pointer + l));}      // 15 Byte für SR#15 bis SR#1 rausschieben
                 break;
         case 3: for (int l=0; l<15; l++){SendRecSPI(pgm_read_byte_near(bild_03 + pointer + l));}      // 15 Byte für SR#15 bis SR#1 rausschieben
                 break;           
